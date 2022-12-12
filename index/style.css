@@ -8,13 +8,13 @@ nav{
     display: flex;
     width: 100%;
     height: 15vh;
-    background-color: #333;
+    background-color: rgb(223, 223, 223);
     align-items: center;
     justify-content: space-around;
 }
 
 nav .logo{
-    width: 15%;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -24,8 +24,8 @@ nav .logo img{
     height: 5vh;
 }
 
-nav .navigation ul{
-    width: 70%;
+nav .navigation{
+    width: 50vw;
     display: flex;
     align-items: center;
     text-align: center;
@@ -33,16 +33,137 @@ nav .navigation ul{
     list-style: none;
 }
 
-nav .perfil{
-    width: 15%;
+nav .navigation ul{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
 }
 
-nav .perfil img{
-    height: 80px;
-    width: 80px;
+nav .navigation ul li a{
+    color: #333;
+}
+
+nav img{
+    height: 5vh;
+}
+
+#home{
+    width: 100vw;
+    display: flex;
+}
+
+#home .left{
+    width: 70vw;
+}
+
+#home .right{
+    background-color: #333;
+    height: 100vh;
+    width: 30vw;
+}
+
+#home .left .criar_postagem{
+    margin-bottom: 10vh;
+}
+
+#home .left .criar_postagem img{
+    height: 10vh;
+    width: 10vh;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 10vh;
+}
+
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#home .left .filtros{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+.postagens .content_pergunta{
+    width: 60%;
+    background-color: #333;
+    padding: 3vh;
+    border-radius: 2vh;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.postagens .content_pergunta img{
+    height: 5vh;
+    width: 5vh;
+    border: solid #fff 2px;
+    border-radius: 5vh;
+    object-fit: cover;
+    margin-right: 2vh;
+}
+
+.postagens .content_pergunta .pergunta{
+    width: 100%;
+}
+
+.postagens .content_pergunta .pergunta .titulo{
+    width: 100%;
+    color: #fff;
+    font-weight: bolder;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+.postagens .content_pergunta .pergunta .texto{
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.right .notificacao{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .notificacao img{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 8vh;
+    object-fit: cover;
+    margin-right: 1vw;
+}
+
+.right .notificacao p{
+    color: aliceblue;
 }

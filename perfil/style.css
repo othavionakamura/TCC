@@ -1,37 +1,15 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-#content{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#content .foto_perfil{
-    height: 35vh;
-    width: 35vh;
+nav .foto_perfil{
+    height: 10vh;
+    width: 10vh;
     object-fit: cover;
     border-radius: 35vh;
-    border: solid gold 1vh;
+    border: solid gold .5vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;        
 }
 
-#content .patente{
-    height: 10vh;
+.patente{
+    height: 6vh;
     width: auto;    
     position: relative;
     left: -25%;
-}
-
-#content .dois{
-    border: solid silver 1vh;
-}
-
-#content .tres{
-    border: solid darkgoldenrod 1vh;
 }
