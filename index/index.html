@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/perfil/style.css">
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <title>InfoTEC</title>
 </head>
 <body>
@@ -31,30 +32,39 @@
         <div class="left">
             <div class="criar_postagem">
                 <img src="imgs/perfil.jpeg" alt="" class="foto_perfil">
-                <textarea name="" id="" cols="50" rows="5" placeholder="No que você está pensando?">
-
-                </textarea>
+                <textarea name="" id="" cols="50" rows="5"></textarea>
             </div>
 
-            <div class="filtros">
-                <div class="opt1">
-                    <input type="checkbox" name="port" id="port">
-                    <button><label for="port">Português</label></button>
-                </div>
-                
-                <div class="opt2">
-                    <input type="checkbox" name="mat" id="mat">
-                    <button><label for="mat">Matemática</label></button>
-                </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="opt1">
+                        <input type="checkbox" name="port" id="port">
+                        <button><label for="port">Português</label></button>
+                    </div>
+                  </div>
 
-                <div class="opt3">
-                    <input type="checkbox" name="hist" id="hist">
-                    <button><label for="hist">História</label></button>
-                </div>
+                  <div class="swiper-slide">
+                    <div class="opt2">
+                        <input type="checkbox" name="mat" id="mat">
+                        <button><label for="mat">Matemática</label></button>
+                    </div>
+                  </div>
 
-                <div class="opt4">
-                    <input type="checkbox" name="geo" id="geo">
-                    <button><label for="geo">Geografia</label></button>
+                  <div class="swiper-slide">
+                    <div class="opt3">
+                        <input type="checkbox" name="hist" id="hist">
+                        <button><label for="hist">História</label></button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="opt4">
+                        <input type="checkbox" name="geo" id="geo">
+                        <button><label for="geo">Geografia</label></button>
+                    </div>
+                  </div>
+
                 </div>
             </div>
 
@@ -175,5 +185,20 @@
         </div>
     </div>
 
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 </body>
 </html>

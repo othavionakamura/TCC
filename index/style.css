@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-nav{
+nav {
     display: flex;
     width: 100%;
     height: 15vh;
@@ -13,18 +13,18 @@ nav{
     justify-content: space-around;
 }
 
-nav .logo{
-    
+nav .logo {
+
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-nav .logo img{
+nav .logo img {
     height: 5vh;
 }
 
-nav .navigation{
+nav .navigation {
     width: 50vw;
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ nav .navigation{
     list-style: none;
 }
 
-nav .navigation ul{
+nav .navigation ul {
     width: 100%;
     display: flex;
     align-items: center;
@@ -42,34 +42,36 @@ nav .navigation ul{
     list-style: none;
 }
 
-nav .navigation ul li a{
+nav .navigation ul li a {
     color: #333;
 }
 
-nav img{
+nav img {
     height: 5vh;
 }
 
-#home{
+#home {
     width: 100vw;
     display: flex;
 }
 
-#home .left{
+#home .left {
     width: 70vw;
 }
 
-#home .right{
+#home .right {
     background-color: #333;
     height: 100vh;
     width: 30vw;
 }
 
-#home .left .criar_postagem{
+#home .left .criar_postagem {
     margin-bottom: 10vh;
 }
 
-#home .left .criar_postagem img{
+
+
+#home .left .criar_postagem img {
     height: 10vh;
     width: 10vh;
     object-fit: cover;
@@ -77,17 +79,49 @@ nav img{
 }
 
 
-hr{
+hr {
     width: 80%;
     margin: 0 auto;
 }
 
 
-#home .left .filtros{
+.swiper {
     width: 100%;
-    height: 10vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    justify-content: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+button {
+    background-color: #fff;
+    width: 25vw;
+    height: 5vh;
+    border: lightblue solid 2px;
+    border-radius: 20px;
+}
+
+input[type="checkbox"]:checked+button {
+    background-color: lightblue;
 }
 
 
@@ -96,9 +130,9 @@ hr{
 
 
 
-.postagens .content_pergunta{
+.postagens .content_pergunta {
     width: 60%;
-    background-color: #333;
+    background-color: lightblue;
     padding: 3vh;
     border-radius: 2vh;
     margin: 0 auto;
@@ -107,7 +141,7 @@ hr{
     justify-content: space-around;
 }
 
-.postagens .content_pergunta img{
+.postagens .content_pergunta img {
     height: 5vh;
     width: 5vh;
     border: solid #fff 2px;
@@ -116,13 +150,13 @@ hr{
     margin-right: 2vh;
 }
 
-.postagens .content_pergunta .pergunta{
+.postagens .content_pergunta .pergunta {
     width: 100%;
 }
 
-.postagens .content_pergunta .pergunta .titulo{
+.postagens .content_pergunta .pergunta .titulo {
     width: 100%;
-    color: #fff;
+    color: #333;
     font-weight: bolder;
     display: flex;
     text-align: center;
@@ -132,7 +166,7 @@ hr{
     margin-bottom: 2vh;
 }
 
-.postagens .content_pergunta .pergunta .texto{
+.postagens .content_pergunta .pergunta .texto {
     width: 100%;
     color: #fff;
     margin: 0 auto;
@@ -148,7 +182,7 @@ hr{
 
 
 
-.right .notificacao{
+.right .notificacao {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -156,7 +190,7 @@ hr{
     justify-content: center;
 }
 
-.right .notificacao img{
+.right .notificacao img {
     height: 5vh;
     width: 5vh;
     border-radius: 8vh;
@@ -164,6 +198,68 @@ hr{
     margin-right: 1vw;
 }
 
-.right .notificacao p{
+.right .notificacao p {
     color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:390px) {
+    nav .navigation {
+        display: none;
+    }
+
+
+    #home .left .criar_postagem {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 10vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #home .left .criar_postagem img {
+        height: 7vh;
+        width: 7vh;
+        object-fit: cover;
+        border-radius: 10vh;
+    }
+
+    #home .left .criar_postagem textarea {
+        width: 80%;
+        height: 6vh;
+        border-radius: 100px;
+    }
+
+
+    #home {
+        flex-direction: column;
+    }
+
+    #home .left {
+        width: 100vw;
+    }
+
+    #home .right {
+        width: 100vw;
+    }
+
+
+
+    .postagens .content_pergunta {
+        width: 85%;
+    }
 }
